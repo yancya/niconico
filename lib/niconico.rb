@@ -22,6 +22,7 @@ class Niconico
     @logined = false
 
     @agent = Mechanize.new
+    @agent.ssl_version = 'TLSv1'
   end
 
   def login(force=false)
